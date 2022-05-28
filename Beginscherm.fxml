@@ -1,0 +1,39 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="331.0" prefWidth="525.0" style="-fx-background-color: #C3E3E7;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.ControllenMain">
+   <children>
+      <Button fx:id="Optie" layoutX="56.0" layoutY="228.0" mnemonicParsing="false" onAction="#OptieSchermKlik" prefHeight="38.0" prefWidth="97.0" text="Optiescherm" />
+      <Button layoutX="214.0" layoutY="228.0" mnemonicParsing="false" onAction="#ToetsschermKlik" prefHeight="38.0" prefWidth="97.0" text="Toetsscherm" />
+      <Button layoutX="373.0" layoutY="228.0" mnemonicParsing="false" onAction="#AfsluitenKlik" prefHeight="38.0" prefWidth="97.0" text="Afsluiten" />
+      <Label layoutX="104.0" layoutY="64.0" text="Welkom bij de Aminozuur kennistest.">
+         <font>
+            <Font name="System Bold" size="18.0" />
+         </font>
+      </Label>
+      <Label layoutX="103.0" layoutY="103.0" text="In deze test krijgt u meerkeuzevragen met drie antwoord">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label graphicTextGap="2.0" layoutX="103.0" layoutY="117.0" text="mogelijkheden. Bij elke vraag is één antwoord juist. ">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label graphicTextGap="2.0" layoutX="103.0" layoutY="132.0" text="Bij de vragen over de 3D-voorkeur zijn vier antwoorden">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+      <Label graphicTextGap="2.0" layoutX="103.0" layoutY="145.0" text="mogelijk.">
+         <font>
+            <Font size="13.0" />
+         </font>
+      </Label>
+   </children>
+</Pane>

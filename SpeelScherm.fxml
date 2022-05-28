@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="400.0" prefWidth="662.0" style="-fx-background-color: #C3E3E7;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.CodeForSpeelScherm">
+   <children>
+      <Label layoutX="237.0" layoutY="22.0" text="Speelscherm">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label fx:id="Welkoms_bericht" layoutX="135.0" layoutY="67.0" prefHeight="20.0" prefWidth="124.0" text="De test over aminozuren is begonnen.">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label fx:id="Welkoms_bericht2" layoutX="134.0" layoutY="105.0" text="Succes" />
+      <Label layoutX="40.0" layoutY="131.0" text="Vraag">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <Label layoutX="83.0" layoutY="131.0" text="1:">
+         <font>
+            <Font size="14.0" />
+         </font>
+      </Label>
+      <RadioButton fx:id="Antwoord_A" layoutX="145.0" layoutY="165.0" mnemonicParsing="false" text="a)">
+         <toggleGroup>
+            <ToggleGroup fx:id="radio_antwoorden" />
+         </toggleGroup></RadioButton>
+      <RadioButton fx:id="Antwoord_B" layoutX="144.0" layoutY="221.0" mnemonicParsing="false" text="b)" toggleGroup="$radio_antwoorden" />
+      <RadioButton fx:id="Antwoord_C" layoutX="144.0" layoutY="271.0" mnemonicParsing="false" text="c)" toggleGroup="$radio_antwoorden" />
+      <RadioButton fx:id="Antwoord_D" layoutX="143.0" layoutY="315.0" mnemonicParsing="false" onAction="#volgende_knop" text="d)" toggleGroup="$radio_antwoorden" />
+      <Button fx:id="Start_knopje" layoutX="77.0" layoutY="347.0" mnemonicParsing="false" onAction="#start_knop" prefHeight="38.0" prefWidth="97.0" text="Start" />
+      <Button fx:id="Volgende_knopje" layoutX="272.0" layoutY="347.0" mnemonicParsing="false" onAction="#volgende_knop" prefHeight="38.0" prefWidth="97.0" text="Volgende" />
+      <Button fx:id="Stop_knopje" layoutX="467.0" layoutY="347.0" mnemonicParsing="false" onAction="#stop_knopje" prefHeight="38.0" prefWidth="97.0" text="Stop" />
+      <Label fx:id="vraag_tellen" layoutX="478.0" layoutY="79.0" prefHeight="17.0" prefWidth="32.0" text="10" />
+      <Label fx:id="slash" layoutX="498.0" layoutY="79.0" prefHeight="17.0" prefWidth="11.0" text="/" />
+      <Label fx:id="aantal_vragen" layoutX="508.0" layoutY="79.0" prefHeight="17.0" prefWidth="36.0" text="40" />
+      <Label fx:id="tijdsdruk_label" layoutX="443.0" layoutY="64.0" prefHeight="26.0" prefWidth="83.0" text="sec" />
+      <Label fx:id="Welkoms_bericht1" layoutX="135.0" layoutY="90.0" prefHeight="17.0" prefWidth="168.0" text="Label" />
+      <Label fx:id="Vragen_stel_label" layoutX="103.0" layoutY="133.0" prefHeight="17.0" prefWidth="485.0" />
+      <Label fx:id="Antwoord_A_label" layoutX="185.0" layoutY="165.0" prefHeight="17.0" prefWidth="290.0" text="Label" />
+      <Label fx:id="Antwoord_B_label" layoutX="185.0" layoutY="221.0" prefHeight="17.0" prefWidth="290.0" text="Label" />
+      <Label fx:id="Antwoord_C_label" layoutX="185.0" layoutY="271.0" prefHeight="17.0" prefWidth="290.0" text="Label" />
+      <Label fx:id="Antwoord_D_label" layoutX="183.0" layoutY="315.0" prefHeight="17.0" prefWidth="290.0" text="Label" />
+      <ImageView fx:id="z_A_afbeelding" fitHeight="45.0" fitWidth="231.0" layoutX="393.0" layoutY="151.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="z_B_afbeelding" fitHeight="45.0" fitWidth="231.0" layoutX="395.0" layoutY="207.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="z_C_afbeelding" fitHeight="45.0" fitWidth="231.0" layoutX="395.0" layoutY="257.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fitHeight="38.0" fitWidth="150.0" layoutX="286.0" layoutY="285.0" pickOnBounds="true" preserveRatio="true" />
+      <ImageView fx:id="Vraag_afbeelding" fitHeight="59.0" fitWidth="200.0" layoutX="508.0" layoutY="112.0" pickOnBounds="true" preserveRatio="true" />
+      <Button fx:id="Resultaat_knopje" layoutX="103.0" layoutY="347.0" mnemonicParsing="false" onAction="#resultaten_knop" prefHeight="38.0" prefWidth="97.0" text="Resultaten" visible="false" />
+      <Label fx:id="vraag_tellen1" layoutX="510.0" layoutY="157.0" prefHeight="17.0" prefWidth="32.0" text="20" />
+   </children>
+</Pane>

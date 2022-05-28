@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.RadioButton?>
+<?import javafx.scene.control.ToggleGroup?>
+<?import javafx.scene.layout.Pane?>
+<?import javafx.scene.text.Font?>
+
+<Pane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="523.0" prefWidth="582.0" style="-fx-background-color: #C3E3E7;" xmlns="http://javafx.com/javafx/11.0.1" xmlns:fx="http://javafx.com/fxml/1" fx:controller="sample.CodeForToetsscherm">
+   <children>
+      <Label layoutX="216.0" layoutY="38.0" text="Toetsscherm">
+         <font>
+            <Font size="30.0" />
+         </font>
+      </Label>
+      <Label layoutX="156.0" layoutY="137.0" text="Hoeveel vragen wil je " />
+      <Button layoutX="30.0" layoutY="464.0" mnemonicParsing="false" onAction="#BeginSchermKlik" prefHeight="38.0" prefWidth="97.0" text="Beginscherm" />
+      <Label layoutX="156.0" layoutY="154.0" text="genereren?" />
+      <RadioButton layoutX="156.0" layoutY="183.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="98.0" text="10 vragen">
+         <toggleGroup>
+            <ToggleGroup fx:id="hoeveel" />
+         </toggleGroup></RadioButton>
+      <RadioButton layoutX="156.0" layoutY="200.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="98.0" text="15 vragen" toggleGroup="$hoeveel" />
+      <RadioButton layoutX="156.0" layoutY="217.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="98.0" selected="true" text="20 vragen" toggleGroup="$hoeveel" />
+      <RadioButton layoutX="156.0" layoutY="234.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="98.0" text="25 vragen" toggleGroup="$hoeveel" />
+      <RadioButton layoutX="156.0" layoutY="251.0" mnemonicParsing="false" prefHeight="17.0" prefWidth="98.0" text="30 vragen" toggleGroup="$hoeveel" />
+      <Button fx:id="antwoord_generen" layoutX="175.0" layoutY="462.0" mnemonicParsing="false" onAction="#Antwoorden" prefHeight="38.0" prefWidth="97.0" text="Antwoorden" />
+      <Button layoutX="309.0" layoutY="464.0" mnemonicParsing="false" onAction="#AfsluitenKlik" prefHeight="38.0" prefWidth="97.0" text="Afsluiten" />
+      <Button fx:id="file_upload" layoutX="357.0" layoutY="142.0" mnemonicParsing="false" onAction="#File_Kiezen" text="File kiezen" />
+      <Label fx:id="FIle_label" layoutX="292.0" layoutY="113.0" prefHeight="17.0" prefWidth="272.0" />
+      <Label fx:id="namen_label" layoutX="447.0" layoutY="72.0" prefHeight="469.0" prefWidth="254.0" />
+   </children>
+</Pane>
